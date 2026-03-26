@@ -23,6 +23,7 @@ func send(name string, money int, wait *sync.WaitGroup) {
 
 // 协程
 func main() {
+	// sync.WaitGroup 用于等待多个 Goroutine 完成。
 	var wait sync.WaitGroup
 	startTime := time.Now()
 	// 现在的模式，就是购物接力
